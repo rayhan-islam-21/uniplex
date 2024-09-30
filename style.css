@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#outer-container{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(250, 250, 250);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#right-side{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #ebebeb;
+
+}
+
+.afterclick{
+    
+    width: 78%;
+}
+
+#top-side{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  0 4px 15px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+ 
+}
+.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.ok-left{
+    width: 300px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.icon-holder{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.2s;
+}
+.icon-holder:hover{
+
+    border-radius: 50%;
+    background-color: #ece9e9;
+}
+#menu-icon,#text-icon,#full-icon{
+    font-size: 26px;
+}
+
+#menu-icon{
+    margin-left: 30px;
+}
+
+#name-box{
+    width: 180px;
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: none;
+}
+#name-box:hover{
+   background-color: #ebebeb;
+   border-radius: 5px;
+}
+span{
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+.image-mine{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: top;
+    border-radius: 50%;
+}
+
+
+
+
+#bottom-side{
+    width: 100%;
+    height:90%;
+    overflow: hidden;
+    position: relative;
+     display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+#outer-box{
+    width: 850px;
+    height: 400px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:-5px;
+}
+
+.box1{
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+}
+
+.mario{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+#left-side {
+    width: 22%;
+    height: 100%;
+    background-color: rgb(228, 239, 243); /* Example color */
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%); 
+    transition: transform 0.2s linear, opacity 0.2s linear;
+    z-index: 3;
+    opacity: 0; 
+    visibility: hidden; 
+    background-color: aquamarine;
+}
+
+#left-side.active {
+    transform: translateX(0); /* Move into view */
+    opacity: 1; /* Make visible */
+    visibility: visible; /* Set to visible */
+}
+
+#right-side {
+    width: 100%; /* Full width initially */
+}
+
+.up{
+    width: 350px;
+    height: 10%;
+    align-content: center;
+    background-color: blue;
+}
+
+.uniplex{
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 180px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+
+    margin-left: 10px;
+}
+.text{
+    font-size: 28px;
+    margin-left: 10px;
+    color: white;
+}
+
+#up-logo{
+    font-size: 28px;
+    color: white;
+    margin-right: 20px;
+}
+
+#mist{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+}
